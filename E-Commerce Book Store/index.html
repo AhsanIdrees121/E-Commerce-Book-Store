@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/E-Commerce Book Store/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/E-Commerce Book Store/js/bootstrap.js">
+    <link rel="stylesheet" href="/E-Commerce Book Store/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <div class="container-fluid bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> 
+                        <a class="navbar-brand nav-link" href="#">BrookField Books</a></li>
+                      <div class="top-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Books</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">Contact Us</a>
+                        </li> 
+                      </div>         
+                </ul>
+                <a class="cart">Cart</a>
+            </nav>
+        </div>
+    </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="navbar-2">
+                <div><li class="heading-0">Support the BrookField</li></div>
+                <div>
+                  <li>
+                    <p class="heading-3">
+                      Available for everyone, funded by users
+                    </p>
+                  </li>
+                </div>
+                <button class="button1 support-us">
+                  Support&nbsp;Us&nbsp;&rarr;
+                </button>
+              </div>
+        </div>
+    </div>
+    <div class="d-lg-flex ">
+      <div class="container">
+        <div class="container-fluid bg-light">
+          <div class="container ">
+            <div class="d-flex ">
+              <div class="searchbar m-3">
+                <input class="search_input" type="text" id="search_book" placeholder="Search the Book">
+                <button type="button" class="btn btn-primary" onclick="search()">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid bg-color">
+          <div class="container ">
+              <p class="categories" href="#">Categories</p>
+              <nav class="navbar navbar-expand" id="categories">
+                <!-- render categories -->
+              </nav>
+          </div>
+        </div>
+        <div class="container-fluid ">
+          <div class="container">
+            <div class="d-flex">
+              <div class="container books-container">
+                <div class="container">
+                  <div class="row" >
+                    <p id="comment"></p>
+                    <div class="show_searched_books">
+                      <!-- Display the searched Books -->
+                    </div>
+                  </div>
+                </div>  
+                <div class="container">
+                  <header class="container d-flex headline">
+                    <div class="container">
+                      <h4>Add Books</h4>
+                    </div>
+                  </header>
+                  <div class="collapse show" id="row-1">
+                    <form class="row">
+                      <table>
+                        <tr>
+                          <td>
+                            <label>Name:</label>
+                          </td>
+                          <td>
+                            <input type="text" id="bname" placeholder="Enter Book Name"><br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>Price($):</label>
+                          </td>
+                          <td>
+                            <input type="number" id="bprice" maxlength="6" size="6" placeholder="Enter Price"><br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>Desc:</label>
+                          </td>
+                          <td>
+                            <input type="text" maxlength="40" size="40" id="bdesc" placeholder="Enter Book Description"><br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label>Category:</label>
+                          </td>
+                          <td>
+                            <input type="radio" id="sport" name="selected_category" value="Sports">
+                              <label for="genre">Sports</label>
+                              <input type="radio" id="romance" name="selected_category"  value="Romance">
+                              <label for="genre">Romance</label><br>
+                              <input type="radio" id="horror" name="selected_category"  value="Horror">
+                              <label for="genre">Horror</label>
+                              <input type="radio" id="health&fitness" name="selected_category"  value="Health & Fitness">
+                              <label for="genre">Health & Fitness</label>
+                          </td>
+                        </tr>
+                      </table>
+                    </form>
+                    <button type="button" onclick="add_book()" class="btn btn-primary">Add The Book</button>
+                  </div>
+                </div>    
+                  
+              </div>
+              
+            </div>
+            <div class="container bg-color">
+              <hr><hr><hr>
+              <div class="books-list">          
+                <div id="show-books" >
+                      <!-- Rendering Books Here From JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="table-container" class="table-container">
+              <table class="table bg-light">
+                <thead>
+                  <tr>
+                    <th colspan="4" scope="col">Cart</th>
+                  </tr>
+                  <tr class="table-group-divider">
+                    <th scope="col">Books</th>
+                    <th scope="col">Quantity</th>
+                    <th colspan="2" scope="col">Price</th>
+                  </tr>
+                </thead>
+                  <tbody class="table-group-divider cart-items">
+                  
+                  </tbody>
+                  <tfoot class="table-group-divider">
+                    <th scope="col">Total</th>
+                    <th scope="col" id="total_quantity" ></th>
+                    <th scope="col" id="total_price" ></th>
+                  </tfoot>
+              </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      const cartItemsEl = document.querySelector(".cart-items");
+      const searchedItemEl=document.querySelector(".show_searched_books");
+      // const finalTableEl=document.querySelector("total_quantity");
+      // const finalPriceEl=document.querySelector("total_price");
+    </script>
+    <script src="/E-Commerce Book Store/functions.js"></script>
+</body>
+</html>

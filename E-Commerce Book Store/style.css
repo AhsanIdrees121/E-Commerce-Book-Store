@@ -1,0 +1,218 @@
+.main{
+    border-top: 8px solid #076599;
+background-color: rgb(224, 164, 86);
+border-bottom: 8px solid #076599;
+transition: 0.5s;
+}
+.navbar-2{
+    padding-left: 10px;
+    flex-direction: column;
+    list-style: none;
+  }
+  .top-nav{
+      display: flex;
+  }
+  @media only screen and (max-width: 776px){
+    .top-nav{
+        display: none;
+    }
+  }
+  .navbar-brand{
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: "GH Guardian Headline", "Guardian Egyptian Web", Georgia, serif !important;
+  }
+  .category-navbar{
+      margin-top: -25px;
+      line-height: 24px;
+  }
+  .category-item{
+    margin-right: 10px;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid white ;
+    border-bottom: 2px solid white ;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+  .category-item:hover{
+    border-top: 2px solid orangered;
+    color: black;
+    font-size: 14pt;
+    font-weight: bolder;
+  }
+  .cart{
+      font-weight: bold;
+      font-size: 18pt;
+      text-decoration: none;
+      color: black;
+  }
+  .pad-right{
+    padding-left: 5em !important;
+    margin-top: -3em;
+    padding: 0;
+   
+    float: right;
+    justify-content: flex-end !important; 
+    justify-self: center !important;
+}
+  .heading-0{
+    color: rgb(255, 229, 0);
+    font-weight: bold;
+    font-size: 20px;
+    text-size-adjust: 100%;
+    font-family: "GH Guardian Headline", "Guardian Egyptian Web", Georgia, serif;
+  }
+  .heading-3{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-size-adjust: 100%;
+    font-size: 17px;
+    font-family: GuardianTextSans, "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  .search_input{
+      border-radius: 20px;
+      border: none;
+      padding:10px;
+      width: 350px;
+      font-size: larger;
+  }
+  @media only screen and (min-width: 850px){
+    .search_input{
+        border-radius: 20px;
+        float: left;
+        border: none;
+        padding:10px;
+        font-size: larger;
+        
+    }
+    .search_icon{
+        color: black;
+        margin-top: 10px;
+    }
+    @media only screen and (min-width: 1000px){
+        .search_input{
+            border-radius: 20px;
+            float: left;
+            border: none;
+            padding:10px;
+            width: 500px;
+            font-size: larger;
+        }
+  }
+}
+.button1 {
+    background-color:  rgb(255, 229, 0)!important;
+    border-radius: 10px !important;
+    border: none;
+    font-size: 15px !important;
+    justify-content: space-between;
+    text-size-adjust: 100%;
+    font-weight: bold;
+    margin-bottom: 1%;
+    cursor: pointer !important;
+  }
+  .search_icon{
+      color: black;
+      align-content: center;
+      margin-left: 5px;
+  }
+  .bg-color{
+    background-color: rgb(196, 154, 99);
+  }
+  .categories{
+    font-weight: bolder;
+    color: rgb(255, 229, 0);
+    font-size: 24px;
+    text-size-adjust: 100%;
+    font-family: "GH Guardian Headline", "Guardian Egyptian Web", Georgia, serif !important;
+  }
+  .books{
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+  hr{
+      color:black;
+      margin: 3px;
+  }
+  .hide-button{
+    border: none;
+    text-align: left;
+    background: none;
+    text-decoration: none;
+    position: absolute;
+    right: 1em;
+    margin-left: 1em;
+  }
+  .hide-button:hover{
+    color: red;
+    text-decoration: underline;
+  }
+  .table-container{
+    width: 80% !important;
+    margin-right: 1em;
+  }
+  .table-container-sm{
+    width: 100% !important;
+    margin-right: 1em;
+    background-color: red;
+  }
+  .books-container{
+    width: 120% !important;
+  }
+  /* .sidebar {
+    margin-left: 0 !important;
+    padding: 0;
+    width: auto;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+  } */
+
+   
+  /* .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  } */
+  
+  /* div.content {
+    margin-left: 0;
+    padding: 1px 16px;
+    height: 1000px;
+  } */
+  
+  /* @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  } */
+  /* icon-shape {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.icon-sm {
+    width: 2rem;
+    height: 2rem;
+    
+} */
